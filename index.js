@@ -24,30 +24,30 @@ module.exports = function DebuffNotifier(dispatch) {
 	dispatch.hook('S_ABNORMALITY_BEGIN', 2, event => { 
 		if(event.source.equals(cid) && (event.id == HURRICANE))
 		{
-			notify('<font color="#ffffff">You have applied </font><font color="#56b4e9">Hurricane</font><font color="#ffffff">!</font>')
-			notifyChat('<font color="#ffffff">You have applied </font><font color="#56b4e9">Hurricane</font><font color="#ffffff">!</font>')
+			notify('<font color="#ffffff">You have applied </font><font color="#56B4E9">Hurricane</font><font color="#ffffff">!</font>')
+			notifyChat('<font color="#ffffff">You have applied </font><font color="#56B4E9">Hurricane</font><font color="#ffffff">!</font>')
 			
 			hurricaneTimer = setInterval(() => {
 			switch (hurricaneTime) {
 				case 90:
-				  notify('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
-				  notifyChat('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
+				  notify('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
+				  notifyChat('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
 				  break
 				case 60:
-				  notify('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
-				  notifyChat('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
+				  notify('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
+				  notifyChat('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
 				  break
 				case 30:
-				  notify('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
-				  notifyChat('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
+				  notify('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
+				  notifyChat('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
 				  break
 				case 15:
-				  notify('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
-				  notifyChat('<font color="#d55e00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#d55e00">' + hurricaneTime + 's</font>')
+				  notify('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
+				  notifyChat('<font color="#E69F00">Hurricane</font><font color="#ffffff"> is ready in </font><font color="#E69F00">' + hurricaneTime + 's</font>')
 				  break
 				case 0:
-				  notifyReady('<font color="#ffffff">Your </font><font color="#56b4e9">Hurricane</font><font color="#ffffff"> is </font><font color="#56b4e9">ready</font><font color="#ffffff">!</font>')
-				  notifyChat('<font color="#ffffff">Your </font><font color="#56b4e9">Hurricane</font><font color="#ffffff"> is </font><font color="#56b4e9">ready</font><font color="#ffffff">!</font>')
+				  notifyReady('<font color="#ffffff">Your </font><font color="#56B4E9">Hurricane</font><font color="#ffffff"> is </font><font color="#56B4E9">ready</font><font color="#ffffff">!</font>')
+				  notifyChat('<font color="#ffffff">Your </font><font color="#56B4E9">Hurricane</font><font color="#ffffff"> is </font><font color="#56B4E9">ready</font><font color="#ffffff">!</font>')
 				  clearInterval(hurricaneTimer)
 				  hurricaneTime = HURRICANE_COOLDOWN
 				  break
@@ -67,12 +67,12 @@ module.exports = function DebuffNotifier(dispatch) {
 					switch (event.id) 
 					{
 						case CONTAGION:
-							notify('<font color="#ffffff">' + memberName + ' has applied <font color="#56b4e9">Contagion</font><font color="#ffffff"> for </font><font color="#56b4e9">' + duration + 's</font>')
-							notifyChat('<font color="#ffffff">' + memberName + ' has applied <font color="#56b4e9">Contagion</font><font color="#ffffff"> for </font><font color="#56b4e9">' + duration + 's</font>')
+							notify('<font color="#ffffff">' + memberName + ' has applied <font color="#56B4E9">Contagion</font><font color="#ffffff"> for </font><font color="#56B4E9">' + duration + 's</font>')
+							notifyChat('<font color="#ffffff">' + memberName + ' has applied <font color="#56B4E9">Contagion</font><font color="#ffffff"> for </font><font color="#56B4E9">' + duration + 's</font>')
 							break
 						case HURRICANE:
-							notify('<font color="#ffffff">' + memberName + ' has applied <font color="#56b4e9">Hurricane</font><font color="#ffffff"> for </font><font color="#56b4e9">' + duration + 's</font>')
-							notifyChat('<font color="#ffffff">' + memberName + ' has applied <font color="#56b4e9">Hurricane</font><font color="#ffffff"> for </font><font color="#56b4e9">' + duration + 's</font>')
+							notify('<font color="#ffffff">' + memberName + ' has applied <font color="#56B4E9">Hurricane</font><font color="#ffffff"> for </font><font color="#56B4E9">' + duration + 's</font>')
+							notifyChat('<font color="#ffffff">' + memberName + ' has applied <font color="#56B4E9">Hurricane</font><font color="#ffffff"> for </font><font color="#56B4E9">' + duration + 's</font>')
 							break
 					}
 				}
@@ -87,12 +87,12 @@ module.exports = function DebuffNotifier(dispatch) {
 			switch (event.id) 
 			{
 				case CONTAGION:
-					notify('<font color="#56b4e9">Contagion</font><font color="#ffffff"> has been reapplied for </font><font color="#56b4e9">' + duration + 's</font>')
-					notifyChat('<font color="#56b4e9">Contagion</font><font color="#ffffff"> has been reapplied for </font><font color="#56b4e9">' + duration + 's</font>')
+					notify('<font color="#56B4E9">Contagion</font><font color="#ffffff"> has been reapplied for </font><font color="#56B4E9">' + duration + 's</font>')
+					notifyChat('<font color="#56B4E9">Contagion</font><font color="#ffffff"> has been reapplied for </font><font color="#56B4E9">' + duration + 's</font>')
 					break
 				case HURRICANE:
-					notify('<font color="#56b4e9">Hurricane</font><font color="#ffffff"> has been reapplied for </font><font color="#56b4e9">' + duration + 's</font>')
-					notifyChat('<font color="#56b4e9">Hurricane</font><font color="#ffffff"> has been reapplied for </font><font color="#56b4e9">' + duration + 's</font>')
+					notify('<font color="#56B4E9">Hurricane</font><font color="#ffffff"> has been reapplied for </font><font color="#56B4E9">' + duration + 's</font>')
+					notifyChat('<font color="#56B4E9">Hurricane</font><font color="#ffffff"> has been reapplied for </font><font color="#56B4E9">' + duration + 's</font>')
 					break
 			}
 		}
@@ -104,12 +104,12 @@ module.exports = function DebuffNotifier(dispatch) {
 			switch (event.id) 
 			{
 				case CONTAGION:
-					notify('<font color="#d55e00">Contagion</font><font color="#ffffff"> has </font><font color="#d55e00">worn off</font>')
-					notifyChat('<font color="#d55e00">Contagion</font><font color="#ffffff"> has </font><font color="#d55e00">worn off</font>')
+					notify('<font color="#E69F00">Contagion</font><font color="#ffffff"> has </font><font color="#E69F00">worn off</font>')
+					notifyChat('<font color="#E69F00">Contagion</font><font color="#ffffff"> has </font><font color="#E69F00">worn off</font>')
 					break
 				case HURRICANE:
-					notify('<font color="#d55e00">Hurricane</font><font color="#ffffff"> has </font><font color="#d55e00">worn off</font>')
-					notifyChat('<font color="#d55e00">Hurricane</font><font color="#ffffff"> has </font><font color="#d55e00">worn off</font>')
+					notify('<font color="#E69F00">Hurricane</font><font color="#ffffff"> has </font><font color="#E69F00">worn off</font>')
+					notifyChat('<font color="#E69F00">Hurricane</font><font color="#ffffff"> has </font><font color="#E69F00">worn off</font>')
 					break
 			}
 		}
@@ -123,15 +123,16 @@ module.exports = function DebuffNotifier(dispatch) {
 		if(event.target.toUpperCase() === "!debuffnotifier".toUpperCase()) {
 			if (/^<FONT>on?<\/FONT>$/i.test(event.message)) {
 				enabled = true
-				message('Debuff Notifier <font color="#009e73">enabled</font>.')
+				message('Debuff Notifier <font color="#56B4E9">enabled</font>.')
 				console.log('Debuff Notifier enabled.')
 			}
 			else if (/^<FONT>off?<\/FONT>$/i.test(event.message)) {
 				enabled = false
-				message('Debuff Notifier <font color="#d55e00">disabled</font>.')
+				message('Debuff Notifier <font color="#E69F00">disabled</font>.')
 				console.log('Debuff Notifier disabled.')
 			}
-			else message('Commands: "on" (enable Debuff Notifier),'
+			else message('Commands:<br>'
+								+ ' "on" (enable Debuff Notifier),<br>'
 								+ ' "off" (disable Debuff Notifier)'
 						)
 			return false
@@ -150,15 +151,31 @@ module.exports = function DebuffNotifier(dispatch) {
 		})
 	}
 	
+	dispatch.hook('C_CHAT', 1, event => {
+		if(/^<FONT>!debuffs<\/FONT>$/i.test(event.message)) {
+			if(!enabled) {
+				enabled = true
+				message('Debuff Notifier <font color="#56B4E9">enabled</font>.')
+				console.log('Debuff Notifier enabled.')
+			}
+			else {
+				enabled = false
+				message('Debuff Notifier <font color="#E69F00">disabled</font>.')
+				console.log('Debuff Notifier disabled.')
+			}
+			return false
+		}
+	})
+	
 	function notifyChat(msg) {
 		dispatch.toClient('S_CHAT', 1, {
-			channel: 1, // Party
+			channel: 213, // Party
 			authorID: 0,
 			unk1: 0,
 			gm: 0,
 			unk2: 0,
 			authorName: '',
-			message: msg
+			message: ' ' + msg
 		})
 	}
 	
