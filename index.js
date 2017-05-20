@@ -168,6 +168,7 @@ module.exports = function DebuffNotifier(dispatch) {
 	})
 	
 	function notifyChat(msg) {
+		if (!enabled) return
 		dispatch.toClient('S_CHAT', 1, {
 			channel: 213, // Party
 			authorID: 0,
