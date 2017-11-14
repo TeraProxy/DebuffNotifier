@@ -1,3 +1,6 @@
+## :heavy_exclamation_mark: Discontinued :heavy_exclamation_mark:
+Support for this module has been discontinued.  
+
 # DebuffNotifier
 A tera-proxy module that sends you notices about Contagion and Hurricane application of yourself and your party, the cooldown of your own Hurricane, as well as when these buffs wear off.  
 Notices are posted in the middle of your screen and party chat.  
